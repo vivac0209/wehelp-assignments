@@ -1,0 +1,155 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+*,*::before,*::after{
+    box-sizing: border-box;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 10PX;
+    padding-bottom: 10px;
+}
+.title{
+    font-size: 20px;
+    padding-left: 10px;
+}
+
+
+.menu{
+    display: flex;
+    justify-content: space-between;
+}
+.menu li{
+    font-size: 20px;
+    padding-right: 10px;
+}
+label,input{
+    display: none;
+}
+
+
+.banner{
+    height: 300px;
+    background: #ddeef8;
+    display: flex;
+    align-items: center;
+}
+.banner_txt{
+    font-size: 40px;
+    font-weight:bold;
+    margin: 0 auto;
+}
+.content{
+    padding-top: 18px;
+}
+
+.boxArea{
+    max-width: 1200px;
+    display: grid;
+    grid-template-columns: repeat(4,1fr); /*設定 Grid 為4欄，每欄寬度為四分之一。 等同於 grid-template-columns: 1fr 1fr 1fr 1fr*/
+    column-gap: 12px; /* 設定欄位間的左右間距 (不含最左/最右) */
+    row-gap: 30px; /* 設定欄位間上下間距 (不含最上/最下) */
+    justify-content: center;
+    align-items: center; 
+    margin: 0 auto;
+}
+
+.box{
+    background-color: #ccdde8;
+}
+.box img{
+    width: 100%;
+    vertical-align:top;
+}
+.box p{
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+@media (max-width:1200px){
+    .boxArea{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(40%, 1fr));
+        column-gap: 10px;
+        justify-content: center;
+        align-items: center; 
+        margin-right: 30px;
+        margin-left: 30px;
+    }
+   
+    
+}
+@media (max-width:600px){
+    .menu{
+        display: none;
+    }
+  
+    label{
+        display: block;
+    }
+    #burger:checked + ul{
+        display:block;
+    }
+    .labelburger img{
+        width: 50px;
+        height: 50px;
+    }
+    .title{
+        display: flex;
+        align-items: center;
+    }
+    .boxArea{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+        
+    }
+    
+    
+}
