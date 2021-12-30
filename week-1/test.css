@@ -55,6 +55,7 @@ table {
     justify-content: space-between;
     padding-top: 10PX;
     padding-bottom: 10px;
+	position: relative;
 }
 .title{
     font-size: 20px;
@@ -150,6 +151,20 @@ label,input{
         grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
         
     }
-    
+    .menu{
+        width: 100%;
+        position: absolute;
+        top: 50;
+        left: 0;
+        background-color: black;
+        
+    }
+    .menu li{
+        color:white;
+        font-size: 18px;
+        text-align: center;
+        border-bottom: 3px solid #ffffff;
+        padding: 10px;
+    } 
     
 }
