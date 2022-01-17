@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>第一個網頁</title>
+    <style>
+        .header{
+            color:white; 
+            background: rgb(76, 52, 231);
+            height: 30%;
+        }
+        .header h1{
+            text-align:center;
+            padding: 20px;
+        }
+        .title{
+            text-align:center;
+        }
+        .content{
+            display: flex;
+            justify-content: center;
+        }
+        
+    </style>
+</head>
+    <body>
+        <div class="header">
+            <h1>歡迎光臨 請輸入帳號密碼</h1>
+        </div>
+        <div class="title">
+            <h2>登入系統</h2>
+        </div>
+        <div class="content">
+            <form action="/singin" method="POST">
+                帳號 <input type="text" name="handle"/>
+                密碼 <input type="text" name="pws"/>
+                
+                <button>登入</button>
+            </form>
+        </div>
+
+    </body>
+</html>
