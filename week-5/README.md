@@ -110,7 +110,7 @@ SELECT AVG(follower_count) FROM `member`;
 要求五：SQL JOIN (Optional)
 
 1. 在資料庫中，建立新資料表，取名字為 message。
-2. 
+
 <img width="376" alt="5" src="https://user-images.githubusercontent.com/71447545/150760512-bbb8e232-b4da-49da-b685-42932522a74e.png">
 
 2. 使用 SELECT 搭配 JOIN 語法，取得所有留言，結果須包含留言者會員的姓名。
