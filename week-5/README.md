@@ -8,9 +8,13 @@
 password 欄位必須是 test。接著繼續新增至少 4 筆隨意的資料。
 
 INSERT INTO `member` (id,name,username,password) VALUES(1,'matt','test','test');
+
 INSERT INTO `member` (name,username,password,follower_count) VALUES('david','dv0124a','qqqqq',180);
+
 INSERT INTO `member` (name,username,password) VALUES('viva','vc0124a','12345');
+
 INSERT INTO `member` (name,username,password,follower_count) VALUES('johndoe','jd0124a','taiwan@2022',35);
+
 INSERT INTO `member` (name,username,password,follower_count) VALUES('chen','chen0124a','2022!4',22);
 
 <img width="462" alt="3-1" src="https://user-images.githubusercontent.com/71447545/150743393-dac9642b-902e-4b3f-af96-55480a4cc74c.png">
@@ -19,16 +23,21 @@ INSERT INTO `member` (name,username,password,follower_count) VALUES('chen','chen
 2. 使用 SELECT 指令取得所有在 member 資料表中的會員資料。
 
 SELECT * FROM `member`;
+
 <img width="462" alt="3-1" src="https://user-images.githubusercontent.com/71447545/150743393-dac9642b-902e-4b3f-af96-55480a4cc74c.png">
 
 =========================================================================================================================================
 3. 使用 SELECT 指令取得所有在 member 資料表中的會員資料，並按照 time 欄位，由
 近到遠排序。
+
 SELECT * FROM `member` ORDER BY `time`;
+
 <img width="349" alt="3-3" src="https://user-images.githubusercontent.com/71447545/150744840-5ba84f99-40e2-4ec7-8318-94a52a09e7c6.png">
 
 由遠到近
+
 SELECT * FROM `member` ORDER BY `time` DESC;
+
 <img width="332" alt="3-3-spec" src="https://user-images.githubusercontent.com/71447545/150744972-73557a3b-811f-4fcd-9128-925fda2eeeed.png">
 
 =========================================================================================================================================
