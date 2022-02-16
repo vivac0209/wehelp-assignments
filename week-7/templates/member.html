@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>會員頁面</title>
+    <style>
+        .header{
+            color:white; 
+            background: rgb(76, 52, 231);
+            height: 30%;
+        }
+        .header h1{
+            text-align:center;
+            padding: 20px;
+        }
+        .content{
+            font-weight: bold;
+            text-align:center;
+        }
+        .query{
+            font-weight: bold;
+            text-align:center;
+        }
+        .query button{
+            margin-top: 10px;
+        }
+        .query input{
+            margin-top: 10px;
+        }
+        .queryResult{
+            font-weight: bold;
+            text-align:center;
+            margin-top: 10px;
+        }
+        .update{
+            font-weight: bold;
+            text-align:center;
+        }
+        .update button{
+            margin-top: 10px;
+        }
+        .update input{
+            margin-top: 10px;
+        }
+        .updateResult{
+            font-weight: bold;
+            text-align:center;
+            margin-top: 10px;
+        }
+    
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>歡迎光臨 這是會員頁</h1>
+    </div>
+    <div class="content">
+        <h3>{{ handle }} 歡迎光臨</h3>
+        <a href="/singout">登出系統</a>
+    </div>
+    <div class="query">
+        <h3>查詢會員姓名</h3>
+        <input type="text" id="queryUsername"><br>
+        <button id="queryButton">查詢</button>
+    </div>
+    <div class="queryResult" id="queryResult"></div>
+
+    <div class="update">
+        <h3>更新我的姓名</h3>
+        <input type="text" id="updateUsername"><br>
+        <button id="updateButton">更新</button>
+    </div>
+    <div class="updateResult" id="updateResult"></div>
+    <script src="static/member.js"> </script>
+</body>
+</html>
